@@ -4,7 +4,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import databaseConfig from './config/database.config';
-import { UsersModule } from './domains/users/users.module';
+import { UserModule } from './domains/user/user.module';
 import { AppController } from './app.controller';
 
 @Module({
@@ -25,7 +25,7 @@ import { AppController } from './app.controller';
       playground: true,
       introspection: true,
     }),
-    UsersModule,
+    UserModule,
   ],
   controllers: [AppController],
 })
