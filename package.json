@@ -1,0 +1,45 @@
+{
+  "name": "multstand-server-db",
+  "version": "1.0.0",
+  "description": "GraphQL API server for managing production of stop-motion animation equipment",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleRaDev12/multstand-server-db.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "@apollo/server": "^4.12.1",
+    "@nestjs/apollo": "^13.1.0",
+    "@nestjs/common": "^11.1.2",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.1.2",
+    "@nestjs/graphql": "^13.1.0",
+    "@nestjs/platform-express": "^11.1.2",
+    "@nestjs/typeorm": "^11.0.0",
+    "express": "^5.1.0",
+    "graphql": "^16.11.0",
+    "pg": "^8.16.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "typeorm": "^0.3.24"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.7",
+    "@nestjs/schematics": "^11.0.5",
+    "@types/node": "^22.15.29",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
